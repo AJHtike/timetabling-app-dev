@@ -11,8 +11,7 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
-        NSLog(@"Hello, World!");
-        NSlog(@"hello hello");
+        NSLog(@"Hello, World!"); //Hey this is commit
     }
     return 0;
 }
