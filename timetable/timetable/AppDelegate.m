@@ -17,6 +17,8 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    /* Temporary ~ sorting the storyboard out - Matthew
+     
     // Override point for customization after application launch.
     [Parse enableLocalDatastore];
     
@@ -26,7 +28,7 @@
     
     // [Optional] Track statistics around application opens.
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
-    
+    */
     return YES;
 }
 
