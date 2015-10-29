@@ -18,32 +18,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppLogo" translatesAutoresizingMaskIntoConstraints="NO" id="asL-6a-bBC">
-                                <rect key="frame" x="147" y="72" width="120" height="90"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="90" id="CB5-of-QZo"/>
-                                    <constraint firstAttribute="width" constant="120" id="njJ-Nj-GHO"/>
-                                </constraints>
-                            </imageView>
-                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iVQ-dG-rq9">
-                                <rect key="frame" x="87" y="304" width="240" height="128"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iVQ-dG-rq9">
+                                <rect key="frame" x="28" y="304" width="358" height="128"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JYD-hx-Rec">
-                                        <rect key="frame" x="0.0" y="0.0" width="240" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JYD-hx-Rec">
+                                        <rect key="frame" x="0.0" y="0.0" width="358" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fbq-zQ-IUr">
-                                        <rect key="frame" x="0.0" y="38" width="240" height="30"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fbq-zQ-IUr">
+                                        <rect key="frame" x="0.0" y="38" width="358" height="30"/>
                                         <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Daq-pS-0ni">
-                                        <rect key="frame" x="0.0" y="76" width="240" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Daq-pS-0ni">
+                                        <rect key="frame" x="0.0" y="76" width="358" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Login"/>
                                         <connections>
-                                            <segue destination="6xs-KX-eea" kind="show" id="a0e-9E-Sks"/>
+                                            <action selector="btnLogin:forEvent:" destination="BYZ-38-t0r" eventType="touchDown" id="ZWa-Du-K5T"/>
+                                            <segue destination="6xs-KX-eea" kind="show" identifier="login" id="a0e-9E-Sks"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -60,15 +56,23 @@
                                     <constraint firstItem="Fbq-zQ-IUr" firstAttribute="top" secondItem="JYD-hx-Rec" secondAttribute="bottom" constant="8" id="uch-jk-nkq"/>
                                 </constraints>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppLogo" translatesAutoresizingMaskIntoConstraints="NO" id="asL-6a-bBC">
+                                <rect key="frame" x="93" y="78" width="228" height="159"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="159" id="CB5-of-QZo"/>
+                                    <constraint firstAttribute="width" constant="228" id="njJ-Nj-GHO"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="iVQ-dG-rq9" secondAttribute="trailing" constant="8" id="Dau-bI-qg2"/>
                             <constraint firstItem="iVQ-dG-rq9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="LoP-Fm-B7n"/>
                             <constraint firstItem="iVQ-dG-rq9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="RyF-TQ-nfc"/>
                             <constraint firstItem="asL-6a-bBC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="adY-fy-81d"/>
                             <constraint firstItem="iVQ-dG-rq9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="d3u-B6-b4Z"/>
-                            <constraint firstItem="asL-6a-bBC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="dpG-u9-OcJ"/>
+                            <constraint firstItem="asL-6a-bBC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="14" id="dpG-u9-OcJ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="iVQ-dG-rq9" secondAttribute="bottom" constant="304" id="j7b-9H-VjR"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Student Login" id="b7v-w6-QQq"/>

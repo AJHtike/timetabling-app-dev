@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "B81A0B37278D62E8C428227642DF85F4A93CD5F5",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "B81A0B37278D62E8C428227642DF85F4A93CD5F5" : 0,
+    "D5A99FA35B49DF1D9B83756C87F6C6196A500F64" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "1AB466A3-07AD-462F-B32A-B6992998C06E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "B81A0B37278D62E8C428227642DF85F4A93CD5F5" : "timetabling-app-dev\/",
+    "D5A99FA35B49DF1D9B83756C87F6C6196A500F64" : "LoginAndSignUpTutorial\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "timetable",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "timetable\/timetable.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/AJHtike\/timetabling-app-dev.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B81A0B37278D62E8C428227642DF85F4A93CD5F5"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/AndriesDeKlerk\/LoginAndSignUpTutorial.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D5A99FA35B49DF1D9B83756C87F6C6196A500F64"
+    }
+  ]
+}

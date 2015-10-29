@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2162B1431BDFB07D009D39E3 /* MyLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2162B1421BDFB07D009D39E3 /* MyLoginViewController.m */; };
 		FA43B35B1BC0F49800BFB974 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA43B35A1BC0F49800BFB974 /* main.m */; };
 		FA43B35E1BC0F49800BFB974 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA43B35D1BC0F49800BFB974 /* AppDelegate.m */; };
 		FA43B3611BC0F49900BFB974 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA43B3601BC0F49800BFB974 /* ViewController.m */; };
@@ -29,8 +30,6 @@
 		FA43B3991BC0F6FD00BFB974 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA43B3981BC0F6FD00BFB974 /* Security.framework */; };
 		FA43B39B1BC0F70600BFB974 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA43B39A1BC0F70600BFB974 /* StoreKit.framework */; };
 		FA43B39D1BC0F71800BFB974 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA43B39C1BC0F71800BFB974 /* SystemConfiguration.framework */; };
-		FA43B39F1BC0F72800BFB974 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FA43B39E1BC0F72800BFB974 /* libz.dylib */; };
-		FA43B3A11BC0F73900BFB974 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FA43B3A01BC0F73900BFB974 /* libsqlite3.dylib */; };
 		FA43B3A31BC0F74400BFB974 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA43B3A21BC0F74400BFB974 /* Accounts.framework */; };
 		FA43B3A51BC0F74D00BFB974 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA43B3A41BC0F74D00BFB974 /* Social.framework */; };
 /* End PBXBuildFile section */
@@ -46,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2162B1411BDFB033009D39E3 /* MyLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyLoginViewController.h; sourceTree = "<group>"; };
+		2162B1421BDFB07D009D39E3 /* MyLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLoginViewController.m; sourceTree = "<group>"; };
 		FA43B3551BC0F49800BFB974 /* timetable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = timetable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA43B3591BC0F49800BFB974 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA43B35A1BC0F49800BFB974 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -74,8 +75,6 @@
 		FA43B3981BC0F6FD00BFB974 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		FA43B39A1BC0F70600BFB974 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		FA43B39C1BC0F71800BFB974 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		FA43B39E1BC0F72800BFB974 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		FA43B3A01BC0F73900BFB974 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		FA43B3A21BC0F74400BFB974 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		FA43B3A41BC0F74D00BFB974 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -87,8 +86,6 @@
 			files = (
 				FA43B3A51BC0F74D00BFB974 /* Social.framework in Frameworks */,
 				FA43B3A31BC0F74400BFB974 /* Accounts.framework in Frameworks */,
-				FA43B3A11BC0F73900BFB974 /* libsqlite3.dylib in Frameworks */,
-				FA43B39F1BC0F72800BFB974 /* libz.dylib in Frameworks */,
 				FA43B39D1BC0F71800BFB974 /* SystemConfiguration.framework in Frameworks */,
 				FA43B39B1BC0F70600BFB974 /* StoreKit.framework in Frameworks */,
 				FA43B3991BC0F6FD00BFB974 /* Security.framework in Frameworks */,
@@ -117,6 +114,59 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2162B1441BDFB611009D39E3 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				FA43B35C1BC0F49800BFB974 /* AppDelegate.h */,
+				FA43B35D1BC0F49800BFB974 /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		2162B1451BDFB7E9009D39E3 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FA43B35F1BC0F49800BFB974 /* ViewController.h */,
+				FA43B3601BC0F49800BFB974 /* ViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		2162B1461BDFB802009D39E3 /* MyLoginViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2162B1411BDFB033009D39E3 /* MyLoginViewController.h */,
+				2162B1421BDFB07D009D39E3 /* MyLoginViewController.m */,
+			);
+			name = MyLoginViewController;
+			sourceTree = "<group>";
+		};
+		2162B1481BDFB878009D39E3 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				FA43B3621BC0F49900BFB974 /* Main.storyboard */,
+				FA43B3671BC0F49900BFB974 /* LaunchScreen.xib */,
+			);
+			name = Interface;
+			sourceTree = "<group>";
+		};
+		2162B1491BDFB88B009D39E3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2162B14A1BDFB89F009D39E3 /* Images */,
+				2162B1481BDFB878009D39E3 /* Interface */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		2162B14A1BDFB89F009D39E3 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				FA43B3651BC0F49900BFB974 /* Images.xcassets */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		FA43B34C1BC0F49800BFB974 = {
 			isa = PBXGroup;
 			children = (
@@ -139,13 +189,10 @@
 		FA43B3571BC0F49800BFB974 /* timetable */ = {
 			isa = PBXGroup;
 			children = (
-				FA43B35C1BC0F49800BFB974 /* AppDelegate.h */,
-				FA43B35D1BC0F49800BFB974 /* AppDelegate.m */,
-				FA43B35F1BC0F49800BFB974 /* ViewController.h */,
-				FA43B3601BC0F49800BFB974 /* ViewController.m */,
-				FA43B3621BC0F49900BFB974 /* Main.storyboard */,
-				FA43B3651BC0F49900BFB974 /* Images.xcassets */,
-				FA43B3671BC0F49900BFB974 /* LaunchScreen.xib */,
+				2162B1491BDFB88B009D39E3 /* Resources */,
+				2162B1461BDFB802009D39E3 /* MyLoginViewController */,
+				2162B1451BDFB7E9009D39E3 /* ViewController */,
+				2162B1441BDFB611009D39E3 /* AppDelegate */,
 				FA43B3581BC0F49800BFB974 /* Supporting Files */,
 			);
 			path = timetable;
@@ -180,10 +227,15 @@
 		FA43B37E1BC0F62000BFB974 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FA43B3801BC0F68100BFB974 /* Bolts.framework */,
+				FA43B3811BC0F68100BFB974 /* Parse.framework */,
+				FA43B3821BC0F68100BFB974 /* ParseCrashReporting.framework */,
+				FA43B3831BC0F68100BFB974 /* ParseFacebookUtils.framework */,
+				FA43B3841BC0F68100BFB974 /* ParseFacebookUtilsV4.framework */,
+				FA43B3851BC0F68100BFB974 /* ParseTwitterUtils.framework */,
+				FA43B3861BC0F68100BFB974 /* ParseUI.framework */,
 				FA43B3A41BC0F74D00BFB974 /* Social.framework */,
 				FA43B3A21BC0F74400BFB974 /* Accounts.framework */,
-				FA43B3A01BC0F73900BFB974 /* libsqlite3.dylib */,
-				FA43B39E1BC0F72800BFB974 /* libz.dylib */,
 				FA43B39C1BC0F71800BFB974 /* SystemConfiguration.framework */,
 				FA43B39A1BC0F70600BFB974 /* StoreKit.framework */,
 				FA43B3981BC0F6FD00BFB974 /* Security.framework */,
@@ -192,23 +244,8 @@
 				FA43B3921BC0F6DE00BFB974 /* CoreGraphics.framework */,
 				FA43B3901BC0F6D100BFB974 /* CFNetwork.framework */,
 				FA43B38E1BC0F6C300BFB974 /* AudioToolbox.framework */,
-				FA43B37F1BC0F64900BFB974 /* parse */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		FA43B37F1BC0F64900BFB974 /* parse */ = {
-			isa = PBXGroup;
-			children = (
-				FA43B3801BC0F68100BFB974 /* Bolts.framework */,
-				FA43B3811BC0F68100BFB974 /* Parse.framework */,
-				FA43B3821BC0F68100BFB974 /* ParseCrashReporting.framework */,
-				FA43B3831BC0F68100BFB974 /* ParseFacebookUtils.framework */,
-				FA43B3841BC0F68100BFB974 /* ParseFacebookUtilsV4.framework */,
-				FA43B3851BC0F68100BFB974 /* ParseTwitterUtils.framework */,
-				FA43B3861BC0F68100BFB974 /* ParseUI.framework */,
-			);
-			name = parse;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +297,7 @@
 				TargetAttributes = {
 					FA43B3541BC0F49800BFB974 = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = XKV8WK2Q6T;
 					};
 					FA43B36D1BC0F49900BFB974 = {
 						CreatedOnToolsVersion = 6.2;
@@ -311,6 +349,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2162B1431BDFB07D009D39E3 /* MyLoginViewController.m in Sources */,
 				FA43B3611BC0F49900BFB974 /* ViewController.m in Sources */,
 				FA43B35E1BC0F49800BFB974 /* AppDelegate.m in Sources */,
 				FA43B35B1BC0F49800BFB974 /* main.m in Sources */,
@@ -438,14 +477,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = timetable/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.seStudent.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -453,14 +495,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = timetable/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.seStudent.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
