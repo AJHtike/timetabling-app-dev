@@ -38,8 +38,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Login"/>
                                         <connections>
-                                            <action selector="btnLogin:forEvent:" destination="BYZ-38-t0r" eventType="touchDown" id="ZWa-Du-K5T"/>
-                                            <segue destination="6xs-KX-eea" kind="show" identifier="login" id="a0e-9E-Sks"/>
+                                            <segue destination="d59-1i-l8J" kind="show" id="Ppw-Aq-7kS"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -85,10 +84,87 @@
             </objects>
             <point key="canvasLocation" x="1891" y="-573"/>
         </scene>
+        <!--UserPortalCourses-->
+        <scene sceneID="KgJ-0G-gXh">
+            <objects>
+                <viewController title="UserPortalCourses" id="yn2-PA-1GI" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Cji-X1-KMM"/>
+                        <viewControllerLayoutGuide type="bottom" id="dxe-9c-eSA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CM8-R8-zuL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Courses" image="HomeIcon" id="Ew5-tw-dBA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tUe-Ig-wzU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1701" y="1104"/>
+        </scene>
+        <!--UserPortalLecturers-->
+        <scene sceneID="9mB-xL-uBY">
+            <objects>
+                <viewController title="UserPortalLecturers" id="LIF-TO-HoE" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="q25-vT-jfq"/>
+                        <viewControllerLayoutGuide type="bottom" id="IkJ-Fw-jKq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WEu-pE-MUF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Lecturers" image="HomeIcon" id="XqI-NN-rZH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GVe-wz-3Bo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1439" y="2006"/>
+        </scene>
+        <!--UserPortalRooms-->
+        <scene sceneID="iMi-jt-2Wo">
+            <objects>
+                <viewController title="UserPortalRooms" id="NT7-yq-fLz" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DhF-ZY-dw9"/>
+                        <viewControllerLayoutGuide type="bottom" id="NRt-h9-mUJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vma-Bh-pYk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Rooms" image="HomeIcon" id="RHA-gm-QOf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6qU-gy-VZt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="976" y="2000"/>
+        </scene>
         <!--UserPortal-->
+        <scene sceneID="HJO-59-QSP">
+            <objects>
+                <tabBarController storyboardIdentifier="tabBarUserPortal" title="UserPortal" useStoryboardIdentifierAsRestorationIdentifier="YES" id="d59-1i-l8J" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="jA7-el-T2U">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="6xs-KX-eea" kind="relationship" relationship="viewControllers" id="pi1-q5-AKh"/>
+                        <segue destination="yn2-PA-1GI" kind="relationship" relationship="viewControllers" id="etj-K5-eZQ"/>
+                        <segue destination="LIF-TO-HoE" kind="relationship" relationship="viewControllers" id="to1-jL-y4u"/>
+                        <segue destination="NT7-yq-fLz" kind="relationship" relationship="viewControllers" id="clP-FS-mUx"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OPh-Fz-pa0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1089" y="550"/>
+        </scene>
+        <!--UserPortalHome-->
         <scene sceneID="4rd-eC-ZQP">
             <objects>
-                <viewController storyboardIdentifier="userPortalViewController" title="UserPortal" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6xs-KX-eea" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="userPortalViewController" title="UserPortalHome" id="6xs-KX-eea" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="SxN-6E-ntO"/>
                         <viewControllerLayoutGuide type="bottom" id="2vs-RR-vbK"/>
@@ -96,19 +172,14 @@
                     <view key="view" contentMode="scaleToFill" id="gWm-1a-acy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oBH-Et-WR1">
-                                <rect key="frame" x="20" y="72" width="150" height="30"/>
-                                <state key="normal" title="HELLO WORLD!!!!!!!!!!"/>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="HomeIcon" id="inM-LR-Ioc"/>
                     <modalPageSheetSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ttB-Mt-56s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1891" y="342"/>
+            <point key="canvasLocation" x="1701" y="262"/>
         </scene>
         <!--InitialViewController-->
         <scene sceneID="OzH-76-aiY">
@@ -133,5 +204,6 @@
     </scenes>
     <resources>
         <image name="AppLogo" width="320" height="240"/>
+        <image name="HomeIcon" width="19" height="20"/>
     </resources>
 </document>

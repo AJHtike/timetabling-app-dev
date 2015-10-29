@@ -44,7 +44,7 @@
     // with a storyboard id of "userPortalViewController"
     else if (textField == self.txfPassword)
     {
-        UIViewController *userController = [self.storyboard instantiateViewControllerWithIdentifier:@"userPortalViewController"];
+        UIViewController *userController = [self.storyboard instantiateViewControllerWithIdentifier:@"tabBarUserPortal"];
         
         [self.navigationController pushViewController:userController animated:YES];
     }
