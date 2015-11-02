@@ -7,6 +7,7 @@
 //
 
 #import "HomeUITableViewController.h"
+#import "CustomCell.h"
 
 @interface HomeUITableViewController ()
 
@@ -22,6 +23,8 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.dataArray = [[NSArray alloc] init];
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -29,30 +32,57 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)viewWillAppear:(BOOL)animated {
+    NSLog(@"I will appear!!");
+    [self retrieveFromParse];
+}
+
+- (void) retrieveFromParse {
+    
+    PFQuery *retrievedata = [PFQuery queryWithClassName:@"TimeTable"];
+    
+    [retrievedata findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error)
+     
+     {
+         if(!error){
+             
+             NSLog(@"Successfully retrieved %lu TimeTable", (unsigned long)objects.count);
+             
+             self.dataArray = objects;
+             
+             
+             [self.datatable reloadData];
+         }
+          // NSLog(@"@%@",_dataArray);
+         
+         
+         
+     }];
+    
+}
+
+
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+    return [self.dataArray count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    // setup cell
+    static NSString *CellIdentifier = @"Custom Cell";
     
-    // Configure cell
-    if (cell == nil)
-    {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-    }
+    CustomCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
-    // Display Units from Course
     
+    PFObject *tempObject = [self.dataArray objectAtIndex:indexPath.row];
+    
+    [cell setObject:tempObject];
     
     
     return cell;
