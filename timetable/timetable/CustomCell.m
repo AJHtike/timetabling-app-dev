@@ -22,12 +22,11 @@
 
 - (void) setObject: (PFObject*) objectSent {
     
-   
+    self.RoomLabel.text = objectSent[@"Room_id"];
+    self.studentLabel.text = objectSent[@"Student_id"];
+    self.unitLabel.text = objectSent[@"Unit_id"];
     self.DateLabel.text = objectSent[@"day_of_week"];
     self.TimeLabel.text = objectSent[@"time"];
-    self.RoomLabel.text = objectSent[@"Room"];
-    
-    
 }
 
 @end

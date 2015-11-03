@@ -13,6 +13,12 @@
 
 
 @property (nonatomic,strong) NSArray *dataArray;
+@property (nonatomic,strong) NSArray *dataArrayunit;
+@property (nonatomic,strong) NSArray *dataArraystudent;
+@property (nonatomic,strong) NSArray *dataArraylecurer;
+@property (nonatomic,strong) NSArray *dataArraycourse;
+@property (nonatomic,strong) NSArray *dataArrayroom;
+@property (nonatomic,strong)NSMutableArray *array;
 
 @property (nonatomic,weak) IBOutlet UITableView *datatable;
 

@@ -17,7 +17,6 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *TimeLabel;
 
-
 @property (weak, nonatomic) IBOutlet UILabel *RoomLabel;
 
 @property (weak, nonatomic) IBOutlet UILabel *studentLabel;

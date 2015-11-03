@@ -23,7 +23,14 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.dataArrayunit = [[NSArray alloc] init];
+    self.dataArraystudent = [[NSArray alloc] init];
+    self.dataArraylecurer = [[NSArray alloc] init];
+    self.dataArrayroom = [[NSArray alloc] init];
+    self.dataArraycourse = [[NSArray alloc] init];
     self.dataArray = [[NSArray alloc] init];
+    self.array = [[NSMutableArray alloc]init];
+
 
 }
 
@@ -38,29 +45,153 @@
 }
 
 - (void) retrieveFromParse {
+
+
+    PFQuery * Unitquery = [PFQuery queryWithClassName:@"Unit"];
     
-    PFQuery *retrievedata = [PFQuery queryWithClassName:@"TimeTable"];
-    
-    [retrievedata findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error)
+    [Unitquery findObjectsInBackgroundWithBlock:^(NSArray *UnitObject, NSError *error)
      
      {
          if(!error){
              
-             NSLog(@"Successfully retrieved %lu TimeTable", (unsigned long)objects.count);
+             NSLog(@"Successfully retrieved %lu TimeTable", (unsigned long)UnitObject.count);
              
-             self.dataArray = objects;
+             self.dataArrayunit = [UnitObject valueForKey:@"Unit_id"];
+            /* self.dataArrayroom = [UnitObject valueForKey:@"Room_id"];
+             self.dataArraycourse = [UnitObject valueForKey:@"Course_id"];
+             self.dataArraylecurer = [UnitObject valueForKey:@"Lecturer_id"];
+             self.dataArraystudent = [UnitObject valueForKey:@"Student_id"];
+             */
+             self.dataArrayunit = UnitObject;
              
              
              [self.datatable reloadData];
          }
-          // NSLog(@"@%@",_dataArray);
+    
+        NSLog(@"%@",UnitObject);
+        
+    }];
+    
+    PFQuery * Roomquery = [PFQuery queryWithClassName:@"Room"];
+    
+    [Roomquery findObjectsInBackgroundWithBlock:^(NSArray *RoomObject, NSError *error)
+     
+     {
+         if(!error){
+             
+             NSLog(@"Successfully retrieved %lu TimeTable", (unsigned long)RoomObject.count);
+             
+              //self.dataArrayunit = [RoomObject valueForKey:@"Unit_id"];
+              self.dataArrayroom = [RoomObject valueForKey:@"Room_id"];
+              //self.dataArraycourse = [RoomObject valueForKey:@"Course_id"];
+              //self.dataArraylecurer = [RoomObject valueForKey:@"Lecturer_id"];
+              //self.dataArraystudent = [RoomObject valueForKey:@"Student_id"];
+
+             self.dataArrayroom = RoomObject;
+
+             
+             
+           //  [self.datatable reloadData];
+         }
          
-         
+         NSLog(@"%@",RoomObject);
          
      }];
     
-}
+    PFQuery * Studentquery = [PFQuery queryWithClassName:@"Student"];
+    
+    [Studentquery findObjectsInBackgroundWithBlock:^(NSArray *StudentObject, NSError *error)
+     
+     {
+         if(!error){
+             
+             NSLog(@"Successfully retrieved %lu TimeTable", (unsigned long)StudentObject.count);
+             
+            // self.dataArrayunit = [StudentObject valueForKey:@"Unit_id"];
+             //self.dataArrayroom = [StudentObject valueForKey:@"Room_id"];
+           //  self.dataArraycourse = [StudentObject valueForKey:@"Course_id"];
+           //  self.dataArraylecurer = [StudentObject valueForKey:@"Lecturer_id"];
+             self.dataArraystudent = [StudentObject valueForKey:@"Student_id"];
+             
+             self.dataArraystudent = StudentObject;
+             
+             
+           //  [self.datatable reloadData];
+         }        NSLog(@"%@",StudentObject);
+        
+    }];
+    
+    PFQuery * Coursequery = [PFQuery queryWithClassName:@"Course"];
+    
+    [Coursequery findObjectsInBackgroundWithBlock:^(NSArray *CourseObject, NSError *error)
+     
+     {
+         if(!error){
+             
+             NSLog(@"Successfully retrieved %lu TimeTable", (unsigned long)CourseObject.count);
+             
+             //self.dataArrayunit = [CourseObject valueForKey:@"Unit_id"];
+             //self.dataArrayroom = [CourseObject valueForKey:@"Room_id"];
+             self.dataArraycourse = [CourseObject valueForKey:@"Course_id"];
+             //self.dataArraylecurer = [CourseObject valueForKey:@"Lecturer_id"];
+             //self.dataArraystudent = [CourseObject valueForKey:@"Student_id"];
 
+             self.dataArraycourse = CourseObject;
+             
+             
+            // [self.datatable reloadData];
+         }        NSLog(@"%@",CourseObject);
+        
+    }];
+    
+    PFQuery * Lecturerquery = [PFQuery queryWithClassName:@"Lecturer"];
+    
+    [Lecturerquery findObjectsInBackgroundWithBlock:^(NSArray *LecturerObject, NSError *error)
+     
+     {
+         if(!error){
+             
+             NSLog(@"Successfully retrieved %lu TimeTable", (unsigned long)LecturerObject.count);
+             
+              //self.dataArrayunit = [LecturerObject valueForKey:@"Unit_id"];
+              //self.dataArrayroom = [LecturerObject valueForKey:@"Room_id"];
+              //self.dataArraycourse = [LecturerObject valueForKey:@"Course_id"];
+              self.dataArraylecurer = [LecturerObject valueForKey:@"Lecturer_id"];
+              //self.dataArraystudent = [LecturerObject valueForKey:@"Student_id"];
+
+             self.dataArraylecurer = LecturerObject;
+             
+             
+            // [self.datatable reloadData];
+             
+         }        NSLog(@"%@",LecturerObject);
+        
+    }];
+    
+    PFQuery * TimeTablequery = [PFQuery queryWithClassName:@"TimeTable"];
+    //[TimeTablequery whereKey:@"Unit_id" matchesKey:@"Unit_id" inQuery:Unitquery];
+    //[TimeTablequery whereKey:@"Room_id" matchesKey:@"Room_id" inQuery:Roomquery];
+    //[TimeTablequery whereKey:@"Student_id" matchesKey:@"Student_id" inQuery:Studentquery];
+    //[TimeTablequery whereKey:@"Lecturer_id" matchesKey:@"Lecturer_id" inQuery:Lecturerquery];
+    //[TimeTablequery whereKey:@"Course_id" matchesKey:@"Course_id".self inQuery:Coursequery];
+    [TimeTablequery findObjectsInBackgroundWithBlock:^(NSArray *TimeTableObject, NSError *error)
+     
+     {
+         if(!error){
+             
+             NSLog(@"Successfully retrieved %lu TimeTable", (unsigned long)TimeTableObject.count);
+             
+             
+             
+             self.dataArray = TimeTableObject;
+             
+             
+             [self.datatable reloadData];
+         }        NSLog(@"%@",TimeTableObject);
+        
+    }];
+   
+}
 
 #pragma mark - Table view data source
 
@@ -79,9 +210,10 @@
     
     CustomCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
+    [self.array addObject:_dataArray];
     
-    PFObject *tempObject = [self.dataArray objectAtIndex:indexPath.row];
-    
+    PFObject *tempObject = [_array objectAtIndex:indexPath.row];
+
     [cell setObject:tempObject];
     
     
