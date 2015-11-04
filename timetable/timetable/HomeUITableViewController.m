@@ -29,9 +29,7 @@
     self.dataArrayroom = [[NSArray alloc] init];
     self.dataArraycourse = [[NSArray alloc] init];
     self.dataArray = [[NSArray alloc] init];
-    self.array = [[NSMutableArray alloc]init];
-
-
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -59,11 +57,14 @@
              
              NSLog(@"Successfully retrieved %lu TimeTable", (unsigned long)TimeTableObject.count);
              
-             self.dataArray = [TimeTableObject valueForKey:@"Unit_id"];
+             
+             //Assign each PFObject to individual NSARRY from the query that will be sent to custom cell
+             self.dataArrayunit = [TimeTableObject valueForKey:@"Unit_id"];
              self.dataArraystudent = [TimeTableObject valueForKey:@"Student_id"];
              self.dataArrayroom = [TimeTableObject valueForKey:@"Room_id"];
              
-             //self.dataArray = TimeTableObject;
+             //This gets the combined values from the table for Day and time
+             self.dataArray = TimeTableObject;
              
              [self.datatable reloadData];
          }
@@ -92,22 +93,19 @@
     
     CustomCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
 
-   // PFObject *unitObject = [self.dataArrayunit objectAtIndex:indexPath.row];
+    //PFObject for each value that needs to be sent to CustomCell
     
-    //PFObject *roomObject = [self.dataArrayroom objectAtIndex:indexPath.row];
+    PFObject *unitObject = [self.dataArrayunit objectAtIndex:indexPath.row];
     
-    //PFObject *studentObject = [self.dataArraystudent objectAtIndex:indexPath.row];
-    PFObject *tempobject = [self.dataArray objectAtIndex:indexPath.row];
+    PFObject *roomObject = [self.dataArrayroom objectAtIndex:indexPath.row];
     
-    
-    
+    PFObject *studentObject = [self.dataArraystudent objectAtIndex:indexPath.row];
 
-    [cell setObject:tempobject];
-    //[cell setObject:studentObject];
-    //[cell setObject:roomObject];
-    //[cell setObject:unitObject];
+    PFObject *dayTimeObject = [self.dataArray objectAtIndex:indexPath.row];
     
-    
+    //Take due note of the order of the objects as the incorrect refference will cause the value not to be dispayed
+    [cell setObject:unitObject : roomObject: studentObject: dayTimeObject];
+
     return cell;
 }
 

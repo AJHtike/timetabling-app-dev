@@ -21,5 +21,7 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *studentLabel;
 
-- (void) setObject: (PFObject*) objectSent;
+
+//Added additional PFObject parameters to sent object to retrieve all data from PF query in HomeUITableViewController
+- (void) setObject: (PFObject*) objectSent :(PFObject*) objectSent1 :(PFObject*) objectSent2 :(PFObject*) objectSent3;
 @end
