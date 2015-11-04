@@ -1,5 +1,5 @@
 //
-//  HomeUITableViewController.h
+//  UserPortalHomeUITableViewController.h
 //  timetable
 //
 //  Created by Matthew Blurton on 29/10/2015.
@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <Parse/Parse.h>
 
-@interface HomeUITableViewController : UITableViewController
+@interface UserPortalHomeUITableViewController : UITableViewController
 
 
 @property (nonatomic,strong) NSArray *dataArray;

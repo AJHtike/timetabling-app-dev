@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "StudentPortalViewController.h"
 
 @interface ViewController ()  <UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *txfUsername;
