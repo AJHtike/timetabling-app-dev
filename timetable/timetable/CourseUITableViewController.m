@@ -69,12 +69,14 @@
     
     PFObject *courseObject = [self.dataArray objectAtIndex:indexPath.row];
     
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+
     [cell setObject:courseObject];
     
     return cell;
 }
 
-- (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath {
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewController *courseDetailed = [self.storyboard instantiateViewControllerWithIdentifier:@"CourseDetailedStoryboardID"];
     [self.navigationController pushViewController:courseDetailed animated:YES];
 }

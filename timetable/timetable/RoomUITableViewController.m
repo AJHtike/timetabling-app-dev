@@ -65,7 +65,14 @@
     
     [cell setObject:LecturerObject];
     
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"RoomDetailedStoryboardID"];
+    [self.navigationController pushViewController:controller animated:YES];
 }
 
 /*

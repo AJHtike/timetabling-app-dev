@@ -6,9 +6,9 @@
 //  Copyright © 2015 Alex. All rights reserved.
 //
 
-#import "CourseDetailedTableViewCell.h"
+#import "DetailTableViewCell.h"
 
-@implementation CourseDetailedTableViewCell
+@implementation DetailTableViewCell
 
 - (void)awakeFromNib {
     // Initialization code
@@ -20,15 +20,14 @@
     // Configure the view for the selected state
 }
 
-- (void) setObject:(PFObject *)unitObject :(PFObject *)instructorObject :(PFObject *)roomObject :(PFObject *)timeOfDayObject {
+- (void) setObject:(PFObject *)unitObject :(PFObject *)instructorObject :(PFObject *)roomObject :(PFObject *)timeOfDayObject:(PFObject *) studentObject {
     self.UnitIDLabel.text = unitObject[@"Unit_id"];
     self.DayLabel.text = timeOfDayObject[@"day_of_week"];
     self.TimeLabel.text = timeOfDayObject[@"time"];
     self.RoomLabel.text = roomObject[@"Room_id"];
     
-    NSString *firstName = [instructorObject[@"Lecturer_name"] stringByAppendingString:@" "];
-    NSString *fullName = [firstName stringByAppendingString:instructorObject[@"Lecturer_surname"]];
-    self.InstructorLabel.text = fullName;
+    self.InstructorLabel.text = instructorObject[@"Lecturer_name"];
+    self.StudentLabel.text = studentObject[@"Student_id"];
 }
 
 @end

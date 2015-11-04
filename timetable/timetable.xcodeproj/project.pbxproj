@@ -11,7 +11,7 @@
 		8261B76B1BEA587100671266 /* RoomUITableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8261B76A1BEA587100671266 /* RoomUITableViewController.m */; };
 		8261B76F1BEA589E00671266 /* RoomUITableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8261B76E1BEA589E00671266 /* RoomUITableViewCell.m */; };
 		8261B7731BEA6B2300671266 /* CourseDetailedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8261B7721BEA6B2300671266 /* CourseDetailedTableViewController.m */; };
-		8261B77B1BEA6FCC00671266 /* CourseDetailedTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8261B77A1BEA6FCC00671266 /* CourseDetailedTableViewCell.m */; };
+		8261B77B1BEA6FCC00671266 /* DetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8261B77A1BEA6FCC00671266 /* DetailTableViewCell.m */; };
 		8271FCF51BE1B79C001723ED /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8271FCF41BE1B79C001723ED /* Images.xcassets */; };
 		8271FD001BE1CC38001723ED /* HomeUITableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8271FCFF1BE1CC38001723ED /* HomeUITableViewController.m */; };
 		82CE0F6D1BEA4F1C00F17C58 /* LecturerUITableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82CE0F6C1BEA4F1C00F17C58 /* LecturerUITableViewController.m */; };
@@ -64,8 +64,8 @@
 		8261B76E1BEA589E00671266 /* RoomUITableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoomUITableViewCell.m; sourceTree = "<group>"; };
 		8261B7711BEA6B2300671266 /* CourseDetailedTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseDetailedTableViewController.h; sourceTree = "<group>"; };
 		8261B7721BEA6B2300671266 /* CourseDetailedTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseDetailedTableViewController.m; sourceTree = "<group>"; };
-		8261B7791BEA6FCC00671266 /* CourseDetailedTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseDetailedTableViewCell.h; sourceTree = "<group>"; };
-		8261B77A1BEA6FCC00671266 /* CourseDetailedTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseDetailedTableViewCell.m; sourceTree = "<group>"; };
+		8261B7791BEA6FCC00671266 /* DetailTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailTableViewCell.h; sourceTree = "<group>"; };
+		8261B77A1BEA6FCC00671266 /* DetailTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailTableViewCell.m; sourceTree = "<group>"; };
 		8271FCF41BE1B79C001723ED /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8271FCFE1BE1CC38001723ED /* HomeUITableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeUITableViewController.h; sourceTree = "<group>"; };
 		8271FCFF1BE1CC38001723ED /* HomeUITableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeUITableViewController.m; sourceTree = "<group>"; };
@@ -224,8 +224,8 @@
 		8261B7781BEA6C4D00671266 /* CustomCell */ = {
 			isa = PBXGroup;
 			children = (
-				8261B7791BEA6FCC00671266 /* CourseDetailedTableViewCell.h */,
-				8261B77A1BEA6FCC00671266 /* CourseDetailedTableViewCell.m */,
+				8261B7791BEA6FCC00671266 /* DetailTableViewCell.h */,
+				8261B77A1BEA6FCC00671266 /* DetailTableViewCell.m */,
 			);
 			name = CustomCell;
 			sourceTree = "<group>";
@@ -479,7 +479,7 @@
 				FA43B3611BC0F49900BFB974 /* ViewController.m in Sources */,
 				82CE0F701BEA4F4900F17C58 /* LecturerUITableViewCell.m in Sources */,
 				8261B7731BEA6B2300671266 /* CourseDetailedTableViewController.m in Sources */,
-				8261B77B1BEA6FCC00671266 /* CourseDetailedTableViewCell.m in Sources */,
+				8261B77B1BEA6FCC00671266 /* DetailTableViewCell.m in Sources */,
 				8271FD001BE1CC38001723ED /* HomeUITableViewController.m in Sources */,
 				82EE3D021BEA420400DD8A45 /* CourseUITableViewController.m in Sources */,
 				82EE3D061BEA42CE00DD8A45 /* CourseUITableViewCell.m in Sources */,

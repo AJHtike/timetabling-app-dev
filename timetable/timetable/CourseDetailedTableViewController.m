@@ -22,6 +22,19 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    /*@property (nonatomic,strong) NSArray *dataArray;
+    @property (nonatomic,strong) NSArray *dataArrayunit;
+    @property (nonatomic,strong) NSArray *dataArraystudent;
+    @property (nonatomic,strong) NSArray *dataArraylecurer;
+    @property (nonatomic,strong) NSArray *dataArraycourse;
+    @property (nonatomic,strong) NSArray *dataArrayroom;*/
+    
+    self.dataArray = [[NSArray alloc] init];
+    self.dataArrayunit = [[NSArray alloc] init];
+    self.dataArraystudent = [[NSArray alloc] init];
+    self.dataArraylecturer = [[NSArray alloc] init];
+    self.dataArrayroom = [[NSArray alloc] init];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -35,30 +48,52 @@
 }
 
 - (void) retrieveFromParse {
+    PFQuery *TimeTableQuery = [PFQuery queryWithClassName:@"TimeTable"];
     
+    [TimeTableQuery includeKey:@"Unit_id"];
+    [TimeTableQuery includeKey:@"Student_id"];
+    [TimeTableQuery includeKey:@"Lecturer_id"];
+    [TimeTableQuery includeKey:@"Room_id"];
+    [TimeTableQuery findObjectsInBackgroundWithBlock:^(NSArray *TimeTableObject, NSError * error) {
+        if (!error) {
+            self.dataArrayunit = [TimeTableObject valueForKey:@"Unit_id"];
+            self.dataArraystudent = [TimeTableObject valueForKey:@"Student_id"];
+            self.dataArraylecturer = [TimeTableObject valueForKey:@"Lecturer_id"];
+            self.dataArrayroom = [TimeTableObject valueForKey:@"Room_id"];
+            
+            self.dataArray = TimeTableObject;
+            
+            [self.detailedTableView reloadData];
+        } else {
+            NSLog(@"Error Occurred: %@", [error description]);
+        }
+    }];
 }
 
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+    return [self.dataArray count];
 }
 
-/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    DetailTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"detailViewCell" forIndexPath:indexPath];
     
     // Configure the cell...
+    PFObject *unit = [self.dataArrayunit objectAtIndex:indexPath.row];
+    PFObject *room = [self.dataArrayroom objectAtIndex:indexPath.row];
+    PFObject *students = [self.dataArraystudent objectAtIndex:indexPath.row];
+    PFObject *lecturers = [self.dataArraylecturer objectAtIndex:indexPath.row];
+    PFObject *timetable = [self.dataArray objectAtIndex:indexPath.row];
+    
+    [cell setObject:unit :lecturers :room :timetable: students];
     
     return cell;
 }
-*/
 
 /*
 // Override to support conditional editing of the table view.
