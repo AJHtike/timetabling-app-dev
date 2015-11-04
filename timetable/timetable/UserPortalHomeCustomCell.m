@@ -1,14 +1,14 @@
 //
-//  CustomCell.m
+//  UserPortalHomeCustomCell.m
 //  timetable
 //
 //  Created by Alex on 02/11/15.
 //  Copyright (c) 2015 Alex. All rights reserved.
 //
 
-#import "CustomCell.h"
+#import "UserPortalHomeCustomCell.h"
 
-@implementation CustomCell
+@implementation UserPortalHomeCustomCell
 
 - (void)awakeFromNib {
     // Initialization code
