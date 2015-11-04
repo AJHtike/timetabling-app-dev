@@ -23,5 +23,5 @@
 
 
 //Added additional PFObject parameters to sent object to retrieve all data from PF query in HomeUITableViewController
-- (void) setObject: (PFObject*) objectSent :(PFObject*) objectSent1 :(PFObject*) objectSent2 :(PFObject*) objectSent3;
+- (void) setObject: (PFObject*) unitObject :(PFObject*) roomObject :(PFObject*) studentObject :(PFObject*) dayTimeObject;
 @end

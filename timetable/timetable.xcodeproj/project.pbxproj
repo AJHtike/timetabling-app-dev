@@ -8,9 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		2162B1431BDFB07D009D39E3 /* MyLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2162B1421BDFB07D009D39E3 /* MyLoginViewController.m */; };
+		8261B76B1BEA587100671266 /* RoomUITableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8261B76A1BEA587100671266 /* RoomUITableViewController.m */; };
+		8261B76F1BEA589E00671266 /* RoomUITableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8261B76E1BEA589E00671266 /* RoomUITableViewCell.m */; };
+		8261B7731BEA6B2300671266 /* CourseDetailedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8261B7721BEA6B2300671266 /* CourseDetailedTableViewController.m */; };
+		8261B77B1BEA6FCC00671266 /* CourseDetailedTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8261B77A1BEA6FCC00671266 /* CourseDetailedTableViewCell.m */; };
 		8271FCF51BE1B79C001723ED /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8271FCF41BE1B79C001723ED /* Images.xcassets */; };
 		8271FD001BE1CC38001723ED /* HomeUITableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8271FCFF1BE1CC38001723ED /* HomeUITableViewController.m */; };
-		8271FD041BE1CFC3001723ED /* CourseWelcome.m in Sources */ = {isa = PBXBuildFile; fileRef = 8271FD031BE1CFC3001723ED /* CourseWelcome.m */; };
+		82CE0F6D1BEA4F1C00F17C58 /* LecturerUITableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82CE0F6C1BEA4F1C00F17C58 /* LecturerUITableViewController.m */; };
+		82CE0F701BEA4F4900F17C58 /* LecturerUITableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 82CE0F6F1BEA4F4900F17C58 /* LecturerUITableViewCell.m */; };
+		82EE3D021BEA420400DD8A45 /* CourseUITableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EE3D011BEA420400DD8A45 /* CourseUITableViewController.m */; };
+		82EE3D061BEA42CE00DD8A45 /* CourseUITableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EE3D051BEA42CE00DD8A45 /* CourseUITableViewCell.m */; };
 		FA1A22F21BE7B18700FB7244 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1A22F11BE7B18700FB7244 /* CustomCell.m */; };
 		FA43B35B1BC0F49800BFB974 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA43B35A1BC0F49800BFB974 /* main.m */; };
 		FA43B35E1BC0F49800BFB974 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA43B35D1BC0F49800BFB974 /* AppDelegate.m */; };
@@ -51,11 +58,25 @@
 /* Begin PBXFileReference section */
 		2162B1411BDFB033009D39E3 /* MyLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyLoginViewController.h; sourceTree = "<group>"; };
 		2162B1421BDFB07D009D39E3 /* MyLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLoginViewController.m; sourceTree = "<group>"; };
+		8261B7691BEA587100671266 /* RoomUITableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoomUITableViewController.h; sourceTree = "<group>"; };
+		8261B76A1BEA587100671266 /* RoomUITableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoomUITableViewController.m; sourceTree = "<group>"; };
+		8261B76D1BEA589E00671266 /* RoomUITableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoomUITableViewCell.h; sourceTree = "<group>"; };
+		8261B76E1BEA589E00671266 /* RoomUITableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoomUITableViewCell.m; sourceTree = "<group>"; };
+		8261B7711BEA6B2300671266 /* CourseDetailedTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseDetailedTableViewController.h; sourceTree = "<group>"; };
+		8261B7721BEA6B2300671266 /* CourseDetailedTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseDetailedTableViewController.m; sourceTree = "<group>"; };
+		8261B7791BEA6FCC00671266 /* CourseDetailedTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseDetailedTableViewCell.h; sourceTree = "<group>"; };
+		8261B77A1BEA6FCC00671266 /* CourseDetailedTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseDetailedTableViewCell.m; sourceTree = "<group>"; };
 		8271FCF41BE1B79C001723ED /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8271FCFE1BE1CC38001723ED /* HomeUITableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeUITableViewController.h; sourceTree = "<group>"; };
 		8271FCFF1BE1CC38001723ED /* HomeUITableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeUITableViewController.m; sourceTree = "<group>"; };
-		8271FD021BE1CFC3001723ED /* CourseWelcome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseWelcome.h; sourceTree = "<group>"; };
-		8271FD031BE1CFC3001723ED /* CourseWelcome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseWelcome.m; sourceTree = "<group>"; };
+		82CE0F6B1BEA4F1C00F17C58 /* LecturerUITableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LecturerUITableViewController.h; sourceTree = "<group>"; };
+		82CE0F6C1BEA4F1C00F17C58 /* LecturerUITableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LecturerUITableViewController.m; sourceTree = "<group>"; };
+		82CE0F6E1BEA4F4900F17C58 /* LecturerUITableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LecturerUITableViewCell.h; sourceTree = "<group>"; };
+		82CE0F6F1BEA4F4900F17C58 /* LecturerUITableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LecturerUITableViewCell.m; sourceTree = "<group>"; };
+		82EE3D001BEA420400DD8A45 /* CourseUITableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseUITableViewController.h; sourceTree = "<group>"; };
+		82EE3D011BEA420400DD8A45 /* CourseUITableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseUITableViewController.m; sourceTree = "<group>"; };
+		82EE3D041BEA42CE00DD8A45 /* CourseUITableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseUITableViewCell.h; sourceTree = "<group>"; };
+		82EE3D051BEA42CE00DD8A45 /* CourseUITableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseUITableViewCell.m; sourceTree = "<group>"; };
 		FA1A22F01BE7B18700FB7244 /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
 		FA1A22F11BE7B18700FB7244 /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
 		FA43B3551BC0F49800BFB974 /* timetable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = timetable.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -171,6 +192,44 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		8261B7681BEA580400671266 /* RoomUITableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8261B7691BEA587100671266 /* RoomUITableViewController.h */,
+				8261B76A1BEA587100671266 /* RoomUITableViewController.m */,
+				8261B76C1BEA587C00671266 /* CustomCell */,
+			);
+			name = RoomUITableViewController;
+			sourceTree = "<group>";
+		};
+		8261B76C1BEA587C00671266 /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				8261B76D1BEA589E00671266 /* RoomUITableViewCell.h */,
+				8261B76E1BEA589E00671266 /* RoomUITableViewCell.m */,
+			);
+			name = CustomCell;
+			sourceTree = "<group>";
+		};
+		8261B7701BEA6ACA00671266 /* CourseDetailed */ = {
+			isa = PBXGroup;
+			children = (
+				8261B7711BEA6B2300671266 /* CourseDetailedTableViewController.h */,
+				8261B7721BEA6B2300671266 /* CourseDetailedTableViewController.m */,
+				8261B7781BEA6C4D00671266 /* CustomCell */,
+			);
+			name = CourseDetailed;
+			sourceTree = "<group>";
+		};
+		8261B7781BEA6C4D00671266 /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				8261B7791BEA6FCC00671266 /* CourseDetailedTableViewCell.h */,
+				8261B77A1BEA6FCC00671266 /* CourseDetailedTableViewCell.m */,
+			);
+			name = CustomCell;
+			sourceTree = "<group>";
+		};
 		8271FCFD1BE1CBE3001723ED /* HomeUITableViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -181,13 +240,42 @@
 			name = HomeUITableViewController;
 			sourceTree = "<group>";
 		};
-		8271FD011BE1CF4F001723ED /* Objects */ = {
+		82CE0F691BEA4E2300F17C58 /* LecturerUITableViewController */ = {
 			isa = PBXGroup;
 			children = (
-				8271FD021BE1CFC3001723ED /* CourseWelcome.h */,
-				8271FD031BE1CFC3001723ED /* CourseWelcome.m */,
+				82CE0F6B1BEA4F1C00F17C58 /* LecturerUITableViewController.h */,
+				82CE0F6C1BEA4F1C00F17C58 /* LecturerUITableViewController.m */,
+				82CE0F6A1BEA4EE700F17C58 /* CustomCell */,
 			);
-			name = Objects;
+			name = LecturerUITableViewController;
+			sourceTree = "<group>";
+		};
+		82CE0F6A1BEA4EE700F17C58 /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				82CE0F6E1BEA4F4900F17C58 /* LecturerUITableViewCell.h */,
+				82CE0F6F1BEA4F4900F17C58 /* LecturerUITableViewCell.m */,
+			);
+			name = CustomCell;
+			sourceTree = "<group>";
+		};
+		82EE3CFF1BEA41AD00DD8A45 /* CourseUITableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				82EE3D001BEA420400DD8A45 /* CourseUITableViewController.h */,
+				82EE3D011BEA420400DD8A45 /* CourseUITableViewController.m */,
+				82EE3D031BEA421200DD8A45 /* CustomCell */,
+			);
+			name = CourseUITableViewController;
+			sourceTree = "<group>";
+		};
+		82EE3D031BEA421200DD8A45 /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				82EE3D041BEA42CE00DD8A45 /* CourseUITableViewCell.h */,
+				82EE3D051BEA42CE00DD8A45 /* CourseUITableViewCell.m */,
+			);
+			name = CustomCell;
 			sourceTree = "<group>";
 		};
 		FA1A22EC1BE7B10F00FB7244 /* CustomCell */ = {
@@ -226,7 +314,10 @@
 				2162B1451BDFB7E9009D39E3 /* ViewController */,
 				2162B1461BDFB802009D39E3 /* MyLoginViewController */,
 				8271FCFD1BE1CBE3001723ED /* HomeUITableViewController */,
-				8271FD011BE1CF4F001723ED /* Objects */,
+				82EE3CFF1BEA41AD00DD8A45 /* CourseUITableViewController */,
+				8261B7701BEA6ACA00671266 /* CourseDetailed */,
+				82CE0F691BEA4E2300F17C58 /* LecturerUITableViewController */,
+				8261B7681BEA580400671266 /* RoomUITableViewController */,
 				FA43B3581BC0F49800BFB974 /* Supporting Files */,
 			);
 			path = timetable;
@@ -386,9 +477,16 @@
 			files = (
 				2162B1431BDFB07D009D39E3 /* MyLoginViewController.m in Sources */,
 				FA43B3611BC0F49900BFB974 /* ViewController.m in Sources */,
+				82CE0F701BEA4F4900F17C58 /* LecturerUITableViewCell.m in Sources */,
+				8261B7731BEA6B2300671266 /* CourseDetailedTableViewController.m in Sources */,
+				8261B77B1BEA6FCC00671266 /* CourseDetailedTableViewCell.m in Sources */,
 				8271FD001BE1CC38001723ED /* HomeUITableViewController.m in Sources */,
-				8271FD041BE1CFC3001723ED /* CourseWelcome.m in Sources */,
+				82EE3D021BEA420400DD8A45 /* CourseUITableViewController.m in Sources */,
+				82EE3D061BEA42CE00DD8A45 /* CourseUITableViewCell.m in Sources */,
+				8261B76F1BEA589E00671266 /* RoomUITableViewCell.m in Sources */,
+				82CE0F6D1BEA4F1C00F17C58 /* LecturerUITableViewController.m in Sources */,
 				FA1A22F21BE7B18700FB7244 /* CustomCell.m in Sources */,
+				8261B76B1BEA587100671266 /* RoomUITableViewController.m in Sources */,
 				FA43B35E1BC0F49800BFB974 /* AppDelegate.m in Sources */,
 				FA43B35B1BC0F49800BFB974 /* main.m in Sources */,
 			);

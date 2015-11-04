@@ -17,8 +17,6 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    /* Temporary ~ sorting the storyboard out - Matthew*/
-     
     // Override point for customization after application launch.
     [Parse enableLocalDatastore];
     
