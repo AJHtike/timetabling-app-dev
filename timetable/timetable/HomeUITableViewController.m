@@ -1,19 +1,19 @@
 //
-//  UserPortalHomeUITableViewController.m
+//  HomeUITableViewController.m
 //  timetable
 //
 //  Created by Matthew Blurton on 29/10/2015.
 //  Copyright © 2015 Alex. All rights reserved.
 //
 
-#import "UserPortalHomeUITableViewController.h"
-#import "UserPortalHomeCustomCell.h"
+#import "HomeUITableViewController.h"
+#import "CustomCell.h"
 
-@interface UserPortalHomeUITableViewController ()
+@interface HomeUITableViewController ()
 
 @end
 
-@implementation UserPortalHomeUITableViewController
+@implementation HomeUITableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -89,9 +89,9 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     // setup cell
-    static NSString *CellIdentifier = @"UserPortalHomeCustomCell";
+    static NSString *CellIdentifier = @"Custom Cell";
     
-    UserPortalHomeCustomCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    CustomCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
 
     //PFObject for each value that needs to be sent to CustomCell
     

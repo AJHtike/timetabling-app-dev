@@ -1,5 +1,5 @@
 //
-//  UserPortalHomeCustomCell.h
+//  CustomCell.h
 //  timetable
 //
 //  Created by Alex on 02/11/15.
@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <Parse/Parse.h>
 
-@interface UserPortalHomeCustomCell : UITableViewCell
+@interface CustomCell : UITableViewCell
 
 @property (weak, nonatomic) IBOutlet UILabel *unitLabel;
 
