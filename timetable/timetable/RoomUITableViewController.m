@@ -71,7 +71,13 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"RoomDetailedStoryboardID"];
+    CourseDetailedTableViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"RoomDetailedStoryboardID"];
+    
+    // Builds a controller that can filter by what room was selected before segue
+    controller.stringKeyFilter = @"Room_id";
+    PFObject *room = [self.dataArray objectAtIndex:indexPath.row];
+    controller.objectValueFilter = room;
+    
     [self.navigationController pushViewController:controller animated:YES];
 }
 

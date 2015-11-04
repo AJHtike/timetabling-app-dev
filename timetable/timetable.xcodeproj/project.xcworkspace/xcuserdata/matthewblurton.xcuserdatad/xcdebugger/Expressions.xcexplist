@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[LecturerUITableViewController tableView:didSelectRowAtIndexPath:]:LecturerUITableViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "lecturer[@&quot;Lecturer_Name&quot;];">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

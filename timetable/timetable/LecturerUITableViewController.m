@@ -74,7 +74,13 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"LecturerDetailedStoryboardID"];
+    CourseDetailedTableViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"LecturerDetailedStoryboardID"];
+    
+    // passes on the lecturer information required to filter the results
+    controller.stringKeyFilter = @"Lecturer_id";
+    PFObject *lecturer = [self.dataArray objectAtIndex:indexPath.row];
+    controller.objectValueFilter = lecturer;
+    
     [self.navigationController pushViewController:controller animated:YES];
 }
 

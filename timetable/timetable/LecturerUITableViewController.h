@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <Parse/Parse.h>
 #import "LecturerUITableViewCell.h"
+#import "CourseDetailedTableViewController.h"
 
 @interface LecturerUITableViewController : UITableViewController
 @property (nonatomic,strong) NSArray *dataArray;

@@ -50,6 +50,11 @@
 - (void) retrieveFromParse {
     PFQuery *TimeTableQuery = [PFQuery queryWithClassName:@"TimeTable"];
     
+    // Checks if both classFromFilter and objectFromFilter has data to determine whether to add a filter to the timetable or not
+    if (self.stringKeyFilter && self.objectValueFilter) {
+        [TimeTableQuery whereKey:self.stringKeyFilter equalTo:self.objectValueFilter];
+    }
+    
     [TimeTableQuery includeKey:@"Unit_id"];
     [TimeTableQuery includeKey:@"Student_id"];
     [TimeTableQuery includeKey:@"Lecturer_id"];

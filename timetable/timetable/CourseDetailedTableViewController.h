@@ -17,6 +17,10 @@
 @property (nonatomic,strong) NSArray *dataArraylecturer;
 @property (nonatomic,strong) NSArray *dataArrayroom;
 
+// Used to filter the list using the class and filter
+@property (nonatomic,strong) NSString *stringKeyFilter;
+@property (nonatomic,strong) PFObject *objectValueFilter;
+
 @property (nonatomic,strong) NSString *objectID;
 
 @property (strong, nonatomic) IBOutlet UITableView *detailedTableView;

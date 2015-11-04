@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <Parse/Parse.h>
 #import "RoomUITableViewCell.h"
+#import "CourseDetailedTableViewController.h"
 
 @interface RoomUITableViewController : UITableViewController
 @property (nonatomic,strong) NSArray *dataArray;
