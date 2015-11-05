@@ -20,12 +20,18 @@
     // Configure the view for the selected state
 }
 //Added additional PFObject parameters to sent object to retrieve all data from PF query in HomeUITableViewController
-- (void) setObject: (PFObject*) unitObject :(PFObject*) roomObject :(PFObject*) studentObject :(PFObject*) dayTimeObject {
+- (void) setObject: (PFObject*) unitObject :(PFObject*) roomObject :(int) studentObject :(PFObject*) dayTimeObject {
     
     //Take due note of the order of objectSent as they need to correspond to the objects being retrieved
-    self.unitLabel.text = unitObject[@"Unit_id"];
+    
+    @try {
+        self.unitLabel.text = unitObject[@"Unit_id"];
+    } @catch (NSException *) {
+        self.unitLabel.text = @"No unit";
+    }
+    
     self.RoomLabel.text = roomObject[@"Room_id"];
-    self.studentLabel.text = studentObject[@"Student_id"];
+    self.studentLabel.text = [NSString stringWithFormat:@"%d", studentObject];
     self.DateLabel.text = dayTimeObject[@"day_of_week"];
     self.TimeLabel.text = dayTimeObject[@"time"];
 }

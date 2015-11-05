@@ -3,10 +3,26 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "-[CustomCell setObject::::]:CustomCell.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "unitObject[@&quot;Unit_id&quot;]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "-[LecturerUITableViewController tableView:didSelectRowAtIndexPath:]:LecturerUITableViewController.m">
          <PersistentStrings>
             <PersistentString
                value = "lecturer[@&quot;Lecturer_Name&quot;];">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__46-[HomeUITableViewController retrieveFromParse]_block_invoke:HomeUITableViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.dataArrayunit">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

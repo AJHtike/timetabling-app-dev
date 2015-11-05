@@ -19,6 +19,8 @@
 @property (nonatomic,strong) NSArray *dataArraycourse;
 @property (nonatomic,strong) NSArray *dataArrayroom;
 
+// @property (nonatomic,strong) NSArray *dataArrayFiltered;
+
 @property (nonatomic,weak) IBOutlet UITableView *datatable;
 
 - (void) retrieveFromParse;
