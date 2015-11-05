@@ -20,7 +20,7 @@
     // Configure the view for the selected state
 }
 
-- (void) setObject:(PFObject *)unitObject :(PFObject *)instructorObject :(PFObject *)roomObject :(PFObject *)timeOfDayObject:(PFObject *) studentObject {
+- (void) setObject:(PFObject *)unitObject : (PFObject *)instructorObject : (PFObject *)roomObject : (PFObject *)timeOfDayObject : (PFObject *) studentObject {
     self.UnitIDLabel.text = unitObject[@"Unit_id"];
     self.DayLabel.text = timeOfDayObject[@"day_of_week"];
     self.TimeLabel.text = timeOfDayObject[@"time"];

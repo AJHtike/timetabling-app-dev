@@ -98,29 +98,30 @@
     
     PFObject *roomObject = [self.dataArrayroom objectAtIndex:indexPath.row];
     
-    //PFObject *studentObject = [self.dataArraystudent objectAtIndex:indexPath.row];
+    PFObject *studentObject = [self.dataArraystudent objectAtIndex:indexPath.row];
 
     PFObject *dayTimeObject = [self.dataArray objectAtIndex:indexPath.row];
-    
+    /*
     int studentCount = 0;
     
-    // self.dataArrayFiltered = self.dataArray;
+    /self.dataArrayFiltered = self.dataArray;
     
     for (PFObject *unit in self.dataArrayunit) {
         if ([unit[@"Unit_id"] isEqualToString: unitObject[@"Unit_id"]]) {
             studentCount += 1;
             
-            /*if (firstFlag) {
+            if (firstFlag) {
                 [self.dataArrayFiltered delete:unit];
             }
-            firstFlag = YES;*/
+            firstFlag = YES;
         }
     }
+     */
     
     //NSLog(@"%lu", _dataArrayFiltered.count);
     
     //Take due note of the order of the objects as the incorrect refference will cause the value not to be dispayed
-    [cell setObject:unitObject : roomObject: studentCount: dayTimeObject];
+    [cell setObject:unitObject : roomObject: studentObject: dayTimeObject];
 
     return cell;
 }
